@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>K J V Lasya Priya - Portfolio</title>
+  <style>
+    :root {
+      --bg-color: linear-gradient(135deg, #667eea, #764ba2);
+      --text-color: #ffffff;
+      --accent-color: #ff6f61;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    nav {
+      margin: 1rem 0;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .section {
+      max-width: 1000px;
+      width: 90%;
+      margin: 2rem 0;
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+
+    .section h2 {
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .project {
+      margin-bottom: 1.5rem;
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 0.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .footer {
+      margin-top: auto;
+      padding: 1rem;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    a.project-link {
+      color: #ffd7d7;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        margin: 0 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="image.jpg" alt="Profile Picture" />
+    <h1>K J V Lasya Priya</h1>
+    <p>Student | Web Developer | Machine Learning Enthusiast | Tech Explorer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate developer with a love for creating interactive and visually appealing web applications. I have experience in both front-end and back-end development and enjoy solving real-world problems using technology and machine learning.
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>🌐 Website with Login and Registration</h3>
+      <p>A responsive website with authentication system using HTML, CSS, JavaScript, and PHP.</p>
+      <img src="login-registration.png" alt="Login Registration Project">
+    </div>
+
+    <div class="project">
+      <h3>📈 Customer Churn Prediction (ML Project)</h3>
+      <p>Used machine learning models like Logistic Regression and Random Forest to predict customer churn, helping businesses retain users.</p>
+      <img src="churn-prediction.png" alt="Customer Churn Project">
+    </div>
+
+    <div class="project">
+      <h3>🎮 Tic Tac Toe Game</h3>
+      <p>A fun 2-player tic tac toe game built using HTML, CSS, and JavaScript.</p>
+      <img src="tic-tac-toe.png" alt="Tic Tac Toe Game">
+    </div>
+
+    <div class="project">
+      <h3>🌾 Farm2Market</h3>
+      <p>A platform to help rural farmers reach global markets with value-added agricultural products.</p>
+      <img src="farm2market.png" alt="Farm2Market Project">
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: kjv.lasyapriya@example.com</p>
+    <p>LinkedIn: <a class="project-link" href="#">linkedin.com/in/lasyapriya</a></p>
+    <p>GitHub: <a class="project-link" href="#">github.com/lasyapriya</a></p>
+  </section>
+
+  <footer class="footer">
+    © 2025 K J V Lasya Priya. All rights reserved.
+  </footer>
+
+</body>
+</html>
